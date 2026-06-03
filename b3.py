@@ -1,8 +1,45 @@
 """ (1) Phân tích và thiết kế giải pháp (Bắt buộc)
 Phân tích Input/Output: Xác định rõ dữ liệu đầu vào (kiểu dữ liệu), dữ liệu đầu ra mong đợi.
-input: ds dp (list), menu(str), 
+input: ds sản phẩm (list), menu(str), mã sản phẩm(str), tên sản phẩm(str), giá(str), số lượng(str)
+output:
+cn1: danh sách sản phẩm
+cn2: thêm sản phẩm mới
+cn3: cập nhật thông tin sản phẩm
+cn4: xóa sản phẩm theo mã
+cn5: thoát chương trình
 Đề xuất giải pháp: Cách sử dụng các hàm, phương thức hợp lệ, kiểm tra dữ liệu hợp lệ và các bước thực hiện chương trình.
+append(), remove(), strip(), upper(), isdigit(), int(), len()
+Duyệt danh sách bằng vòng lặp for để:
+- Hiển thị sản phẩm
+- Kiểm tra mã sản phẩm trùng
+- Tìm sản phẩm cần cập nhật
+- Tìm sản phẩm cần xóa
+Kiểm tra dữ liệu hợp lệ:
+- Mã sản phẩm không được trùng
+- Giá sản phẩm phải là số nguyên dương
+- Số lượng sản phẩm phải là số nguyên dương
 Thiết kế thuật toán: Viết Pseudocode hoặc mô tả luồng chương trình.
+Khai báo product_list
+Hiển thị menu -> nhập lựa chọn
+cn1:
+Kiểm tra danh sách rỗng
+Hiển thị toàn bộ sản phẩm
+cn2:
+Nhập mã sản phẩm
+Kiểm tra mã trùng
+Nhập tên, giá, số lượng
+Kiểm tra dữ liệu hợp lệ
+Thêm sản phẩm vào danh sách
+cn3:
+Nhập mã sản phẩm
+Tìm sản phẩm cần cập nhật
+Nếu tìm thấy -> cập nhật tên, giá, số lượng
+cn4:
+Nhập mã sản phẩm
+Tìm sản phẩm cần xóa
+Nếu tìm thấy -> xóa sản phẩm
+cn5:
+Thoát chương trình
 """
 # (2) Triển khai code
 # Viết source code Python hoàn chỉnh.
